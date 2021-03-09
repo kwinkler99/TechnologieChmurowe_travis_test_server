@@ -1,0 +1,24 @@
+{
+  "name": "technologiechmurowelab3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwinkler99/TechnologieChmuroweLab3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwinkler99/TechnologieChmuroweLab3/issues"
+  },
+  "homepage": "https://github.com/kwinkler99/TechnologieChmuroweLab3#readme",
+  "dependencies": {
+    "chai": "^4.3.3",
+    "express": "^4.17.1",
+    "mocha": "^8.3.1"
+  }
+}
