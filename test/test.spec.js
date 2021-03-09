@@ -4,7 +4,10 @@ const server = require('../server');
 describe('node test', () => {
 
     describe('get test', () => {
-
+        request('http://localhost:3000' , function(error, response, body) {
+            expect(body).to.equal({'array': []});
+            done();
+        });
     })
 
     describe('post test', () => {
