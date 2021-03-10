@@ -12,7 +12,7 @@ let array = []
 
 app.get('/', (req, res) => {
     res.send({
-        'array': array
+        array: array
     });
 })
 
@@ -23,9 +23,9 @@ app.post('/', (req, res) => {
     })
 })
 
-app.put('/:id/:update', (req, res) => {
+app.put('/:id', (req, res) => {
     const id = req.params.id
-    const update = req.params.update
+    const update = req.body.update
     array = array.map(item => {
         if(item.id === parseInt(id)){
             item.details = update
@@ -34,7 +34,7 @@ app.put('/:id/:update', (req, res) => {
     })
 
     res.send({
-        'update': update
+        update: update
     })
 
 })
@@ -49,7 +49,7 @@ app.delete('/:id', (req, res) => {
         return item
     })
     res.send({
-        'deleteId': id
+        deleteId: parseInt(id)
     })
 })
 
