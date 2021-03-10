@@ -19,7 +19,9 @@
   "homepage": "https://github.com/kwinkler99/TechnologieChmuroweLab3#readme",
   "dependencies": {
     "chai": "^4.3.3",
+    "chai-http": "^4.3.0",
     "express": "^4.17.1",
-    "mocha": "^8.3.1"
+    "mocha": "^8.3.1",
+    "request": "^2.88.2"
   }
 }

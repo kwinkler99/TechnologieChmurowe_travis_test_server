@@ -6,6 +6,7 @@ const port = 3000
 const HOST = '0.0.0.0';
 
 const app = express();
+app.use(express.json());
 
 let array = []
 
@@ -15,10 +16,10 @@ app.get('/', (req, res) => {
     });
 })
 
-app.post('/:new', (req, res) => {
-    array.push({'details': req.params.new, 'id': array.length})
+app.post('/', (req, res) => {
+    array.push({'details': req.body.new, 'id': array.length})
     res.send({
-        addSthNew: req.params.new
+        addSthNew: req.body.new
     })
 })
 
@@ -52,6 +53,8 @@ app.delete('/:id', (req, res) => {
     })
 })
 
-app.listen(port, HOST);
-console.log(`http://${HOST}:${port}`)
+app.listen(port, () => {
+    console.log(`Server started on port ${port}`);
+});
 
+module.exports = {app}
