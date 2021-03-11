@@ -1,3 +1,3 @@
-# TechnologieChmurowe3
+# TechnologieChmurowe_travis_test_server
 
-![Build Status](https://travis-ci.com/kwinkler99/TechnologieChmuroweLab3.svg?branch=master)
+![Build Status](https://travis-ci.com/kwinkler99/TechnologieChmurowe_travis_test_server.svg?branch=master)
